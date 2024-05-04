@@ -1,0 +1,381 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="hp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  </head>
+
+  
+<style>
+
+ .swiper {
+      width: 100%;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 700px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 300px;
+    }
+
+</style>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <nav class="navwan">
+     
+        <ul class="unlwan">
+          <div class="logo"></div>
+            <img src="">
+          <li class="listwan">
+            <a href="#" class="linkwan active">store</a>
+          </li>
+          <li class="listwan">
+            <a href="#" class="linkwan">faq</a>
+          </li>
+          <li class="listwan">
+            <a href="/About-Us.html" class="linkwan">about us</a>
+          </li>
+          <li class="SignUp">
+            <a href="#" class="SignUp-Container">Sign In</a>
+          </li>
+
+        </ul>
+      </nav>
+
+   <nav class="navtwo">
+        <ul class="unltwo">
+        <form class="search">
+            <input type="text" name="search" id="srch" value="search store" class="searchh">
+        </form>
+        <li class="listtwo">
+            <a href="#" class="linktwo">discover</a>
+          </li>
+
+      <li class="listtwo">
+        <a href="#" class="linktwo">wishlist</a>
+      </li>
+      <li class="listtwo">
+        <a href="#" class="linktwo">cart</a>
+      </li>
+
+    </ul>
+</nav>
+
+
+
+    <div class="three" style="position: relative;">
+      <div class="slider">
+        <!-- list Items -->
+        <div class="list">
+            <div class="item active">
+                <img src="/game_images/Sports/Madden/ig6.jpg">
+                <div class="content">
+                    <p>Out Now</p>
+                    <h2>Madden NFL 24</h2>
+                    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                      Experience the newest iteration of FieldSENSE™ in Madden NFL 24. 
+                      More realistic character movement and smarter AI gives you control to 
+                      play out your gameplay strategy with the confidence to dominate any opponent.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/game_images/Action/RRD2/ig1.jpg">
+                <div class="content">
+                    <p>Out now</p>
+                    <h2>Red Dead Redemption 2</h2>
+                    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                      Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, 
+                      RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, 
+                      on the run across America at the dawn of the modern age. Also includes access to 
+                      the shared living world of Red Dead Online.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/game_images/FPS/codmw/ig3.jpg">
+                <div class="content">
+                    <p>Out Now</p>
+                    <h2>Call of Duty: Modern Warfare</h2>
+                    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                      Experience a visceral Campaign or assemble your team in the ultimate online playground 
+                      with multiple Special Ops challenges and a mix of Multiplayer maps and modes.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/game_images/Horror/DeadByDaylight/ig1.jpg">
+                <div class="content">
+                    <p>Out Now</p>
+                    <h2>Dead by Daylight</h2>
+                    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                      Dead by Daylight is a multiplayer (4vs1) horror game where one player takes 
+                      on the role of the savage Killer, and the other four players play as Survivors, 
+                      trying to escape the Killer and avoid being caught and killed.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/game_images/Horror/DyingLight2/ig3.jpg">
+                <div class="content">
+                    <p>Out Now</p>
+                    <h2>Dying Light 2</h2>
+                    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                      Now with guns! With the Reloaded Edition, the arsenal at your disposal has grown 
+                      massively. Be creative with your combat or outrun your foes as you enjoy the perks 
+                      of more than 10 post-launch updates. Good luck out there, and stay human!
+                    </p>
+                </div>
+            </div>
+        </div>
+       <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev"></button>
+            <button id="next">></button>
+        </div> 
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="/game_images/Sports/Madden/portrait.jpg">
+                <div><a href="/GameTabs/Madden.html">
+                    <button class="GameName-container">
+                      <span class="GameName-button">Get Now</span>
+                    </button></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/game_images/Action/RRD2/portrait.jpg">
+                <div><a href="/GameTabs/RedDead.html">
+                  <button class="GameName-container">
+                    <span class="GameName-button">Get Now</span>
+                  </button></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/game_images/FPS/codmw/portrait.jpg">
+                <div><a href="/GameTabs/CODMW.html">
+                  <button class="GameName-container">
+                    <span class="GameName-button"></span>Get Now</span>
+                  </button></a>
+              </div>
+            </div>
+            <div class="item">
+                <img src="/game_images/Horror/DeadByDaylight/portrait.jpg">
+                <div><a href="/GameTabs/DeadbyDaylight.html">
+                  <button class="GameName-container">
+                    <span class="GameName-button">Get Now</span>
+                  </button></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/game_images/Horror/DyingLight2/portrait.jpg">
+                <div><a href="/GameTabs/DyingLight2.html">
+                  <button class="GameName-container">
+                    <span class="GameName-button">Get Now</span>
+                  </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+
+    </div>
+
+
+    <div class="four"><h2 class="dgt">Discounted Games</h2>
+      <div class="DiscountedGames-container">
+        <div class="fourcont">
+          <div>
+            <a href="/GameTabs/FC24.html"><img src="/game_images/Sports/FC24/portrait.jpg"  class="DiscountedGamesPics"></a>
+            <div class="DiscountedPrice-container">
+              <span class="DiscountPercent">-80%</span>
+              <span class="OrigPrice">₱2,999.00</span>
+              <span class="DiscountedPrice">₱599.00</span>
+            </div>
+          </div>
+          <div>
+            <a href="/GameTabs/BattleField.html"><img src="/game_images/FPS/battlefield2042/portrait.jpeg" class="DiscountedGamesPics"></a>
+            <div class="DiscountedPrice-container">
+              <span class="DiscountPercent">-87%%</span>
+              <span class="OrigPrice">₱2,599.00</span>
+              <span class="DiscountedPrice">₱337.87</span>
+            </div>
+          </div>
+          <div>
+            <a href="/GameTabs/DyingLight2.html"><img src="/game_images/Horror/DyingLight2/portrait.jpg" class="DiscountedGamesPics"></a>
+            <div class="DiscountedPrice-container">
+              <span class="DiscountPercent">-70%</span>
+              <span class="OrigPrice">₱2,990.00</span>
+              <span class="DiscountedPrice">₱897.00</span>
+            </div>
+          </div>
+          <div>
+            <a href="/GameTabs/RedDead.html"><img src="/game_images/Action/RRD2/portrait.jpg" class="DiscountedGamesPics"></a>
+            <div class="DiscountedPrice-container">
+              <span class="DiscountPercent">-60%</span>
+              <span class="OrigPrice">₱2,300.00</span>
+              <span class="DiscountedPrice">₱1,380.87</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--anuba bub tamaccana dyan ipasa na natin to-->
+      </div>
+    </div>
+    <div class="payb">
+
+      <h2 class="bbgt" style="margin-top: 100; margin-left: 200;">Browse by Genres</h2>
+      <h3 class="bbgt">ACTION</h3>
+ <!-- (1) Swiper -->
+ <div class="swiper mySwiper">
+
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <a href="/GameTabs/EldenRing.html"><img src="/game_images/Action/EldenRing/poster.jpg"></a>
+    </div>
+
+    <div class="swiper-slide">
+      <a href="/GameTabs/GTA.html"><img src="/game_images/Action/GTA/poster.jpg"></a>
+    </div>
+
+    <div class="swiper-slide">
+     <a href="/GameTabs/RedDead.html"><img src="/game_images/Action/RRD2/poster.jpg"></a>
+    </div>
+   
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+    </div>
+    <div><hr></div>
+    <div class="six">
+<!-- (2) Swiper -->
+<h3 class="bbgt">FPS</h3>
+<div class="swiper mySwiper">
+
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <a href="/GameTabs/BattleField.html"><img src="/game_images/FPS/battlefield2042/gamebackground.jpeg"></a>
+    </div>
+
+    <div class="swiper-slide">
+      <a href="/GameTabs/CODMW.html"><img src="/game_images/FPS/codmw/poster.jpg"></a>
+    </div>
+
+    <div class="swiper-slide">
+      <a href="/GameTabs/Rainbowsix.html"><img src="/game_images/FPS/rainbowsix/poster.jpg"></a>
+    </div>
+   
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+    </div>
+    <div><hr></div>
+    <div class="seven">
+      <h3 class="bbgt">HORROR</h3>
+      <!-- (3) Swiper -->
+      <div class="swiper mySwiper">
+      
+        <div class="swiper-wrapper">
+      
+          <div class="swiper-slide">
+            <a href="/GameTabs/DeadbyDaylight.html"><img src="/game_images/Horror/DeadByDaylight/poster.jpg"></a>
+          </div>
+      
+          <div class="swiper-slide">
+            <a href="/GameTabs/DyingLight2.html"><img src="/game_images/Horror/DyingLight2/poster.jpg"></a>
+          </div>
+      
+          <div class="swiper-slide">
+            <a href="/GameTabs/SonsOfTheForest.html"><img src="/game_images/Horror/SonsOfTheForest/poster.jpg"></a>
+          </div>
+         
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+          </div>
+          <div><hr></div>
+          <div class="eight">
+            <h3 class="bbgt">SPORTS</h3>
+            <!-- (4) Swiper -->
+            <div class="swiper mySwiper">
+            
+              <div class="swiper-wrapper">
+            
+                <div class="swiper-slide">
+                  <a href="/GameTabs/FC24.html"><img src="/game_images/Sports/FC24/poster.jpg"></a>
+                </div>
+            
+                <div class="swiper-slide">
+                  <a href="/GameTabs/Madden.html"><img src="/game_images/Sports/Madden/header.jpg"></a>
+                </div>
+            
+                <div class="swiper-slide">
+                  <a href="/GameTabs/NBA2k24.html"><img src="/game_images/Sports/NBA2k24/poster.jpg"></a>
+                </div>
+               
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            
+                </div>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 10,
+      stretch: 0,
+      depth: 200,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop:true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    }
+  });
+</script>
+
+
+
+<div class="nine">
+
+  <div class="flabel">
+    <hr style="border-color: rgb(87, 87, 87);">
+     <p class="f">© 2024, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. Other brands or product names are the trademarks of their respective owners.
+    Our websites may contain links to other sites and resources provided by third parties. These links are provided for your convenience only. Epic Games has no control over the contents of those sites or resources, and accepts no responsibility for them or for any loss or damage that may arise from your use of them.</p></div>
+<div class="flogo"></div>
+
+</div>
+
+
+</body>
+</html>

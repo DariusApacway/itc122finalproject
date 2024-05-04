@@ -1,0 +1,532 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  position: relative;
+  height:100%;
+  background-image: linear-gradient(to right top, #1f1f1f 0%, #1f1f1f 100%);
+}
+
+body{
+    position: relative;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+
+/*.................navbar one ........................................................*/
+
+
+.navwan {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+.logo{
+margin: 0;
+padding: 0 30 0 0;
+height: 70px;
+width: 90px;
+background-color:rgb(43, 43, 43);
+margin: 0;
+background-image: url(GameOnLogo.png);
+background-size: cover;
+}
+
+.navwan .unlwan {
+  text-align: center;
+  background:rgb(43, 43, 43);
+  display: flex;
+ 
+}
+
+.navwan .unlwan .listwan {
+  display: flex;
+  align-items: center;
+}
+
+.navwan .unlwan .listwan .linkwan {
+  padding: 23px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  text-transform:uppercase;
+  color: rgba(235, 235, 235, 0.877);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+}
+
+.SignUp{
+  display: flex;
+  align-items: center;
+}
+
+.SignUp-Container{
+  padding: 23px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: rgba(235, 235, 235, 0.877);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+.navwan .unlwan .listwan .linkwan:hover {
+ /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);*/
+  background:rgb(43, 43, 43);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+ .navwan .unlwan a.active {
+  border-bottom: 3px solid red;
+}
+/* .........................second navbar..........................................*/
+
+.navtwo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  height: 75px;
+  width: 100%;
+  list-style-type: none;
+  overflow: hidden; 
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: #1f1f1f;
+  z-index: 100;
+  margin-top: 0;
+  padding-left: 8%;
+  }
+  
+  .unltwo {
+    text-align: center;
+    background: #1f1f1f;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0);
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+  }
+  
+  .navtwo .unltwo .listtwo {
+    display: flex;
+  }
+  
+  .navtwo .unltwo .listtwo .linktwo {
+    padding: 25px;
+    font-family: "Roboto", sans-serif;
+    text-transform:uppercase;
+    color: rgba(235, 235, 235, 0.877);
+    font-size: 14px;
+    text-decoration: none;
+    justify-self: flex-start;
+  }
+  
+  .navtwo .unltwo .listtwo .linktwo:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .search{
+    margin: 0 20 0 0;
+    
+  }
+
+ .searchh {
+    background-color: rgba(97, 86, 86, 0.151);
+    border-radius: 20px;
+    border: none;
+    height: 35px;
+    width: 230px;
+    color: rgb(97, 97, 97);
+    padding: 20px;
+    justify-self: flex-start;
+    
+ }
+
+ /*.........................featured games................................................................*/
+h2{
+  color: #eee;
+}
+
+p{
+  color: #eee;
+}
+
+.slider{
+  height: 100vh;
+  margin-top: -50px;
+  position: relative;
+}
+.slider .list .item{
+  position: absolute;
+  inset: 0 0 0 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+.slider .list .item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider .list .item::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+      to top, #000 35%, transparent
+  );
+}
+.slider .list .item .content{
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: 580px;
+  max-width: 80%;
+  z-index: 1;
+}
+.slider .list .item .content p:nth-child(1){
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.slider .list .item .content h2{
+  font-size: 50px; /*title ng game font*/
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.slider .list .item.active{
+  opacity: 1;
+  z-index: 10;
+}
+@keyframes showContent {
+  to{
+      transform: translateY(0);
+      filter: blur(0);
+      opacity: 1;
+  }
+}
+.slider .list .item.active p:nth-child(1),
+.slider .list .item.active h2,
+.slider .list .item.active p:nth-child(3){
+  transform: translateY(30px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent .5s .7s ease-in-out 1 forwards;
+}
+.slider .list .item.active h2{
+  animation-delay: 1s;
+}
+.slider .list .item.active p:nth-child(3){
+  animation-duration: 1.3s;
+}
+.arrows{
+  position: absolute;
+  top: 30%;
+  right: 50px;
+  z-index: 100;
+}
+.arrows button{
+  background-color: rgba(238, 238, 238, 0);
+  border: none;
+  font-family: monospace;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: x-large;
+  color: #eeeeee00;
+  transition: .5s;
+  opacity: 1;
+}
+.arrows button:hover{
+  background-color: #eeeeee00;
+  color: black;
+}
+.thumbnail{
+  position: absolute;
+  bottom: 50px;
+  z-index: 11;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 250px;
+  padding: 0 50px;
+  box-sizing: border-box;
+  overflow: auto;
+  justify-content: center;
+}
+.thumbnail::-webkit-scrollbar{
+  width: 0;
+}
+.thumbnail .item{
+  width: 150px;
+  height: 220px;
+  filter: brightness(.5);
+  transition: .5s;
+  flex-shrink: 0;
+}
+.thumbnail .item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.thumbnail .item.active{
+  filter: brightness(1.5);
+}
+.thumbnail .item .content{
+  position: absolute;
+  inset: auto 10px 10px 10px;
+}
+@media screen and (max-width: 678px) {
+  .thumbnail{
+      justify-content: start;
+  }
+  .slider .list .item .content h2{
+      font-size: 60px;
+  }
+  .arrows{
+      top: 10%;
+  }
+}
+
+
+ /*.............................................div four.........................................................*/
+
+ .four{
+  height: auto;
+  background-color: #1f1f1f ;
+  z-index: 1;
+  
+ }
+
+.dgt{
+  margin-left: 200px;
+  color: #ffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+
+.fourcont{
+position: relative;
+left: 170px;
+height: auto;
+width: 75%;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+flex-direction: row;
+
+}
+
+.dga{
+  height:fit-content;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ldga{
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.DiscountedGames-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.DiscountedPrice-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+  color: aliceblue;
+  justify-content: flex-start;
+}
+
+.DiscountedGamesPics{
+  width: 220;
+  height: 300;
+  border-radius: 8px;
+  justify-content: space-evenly;
+  margin: 0 2px 0 2px;
+}
+
+.DiscountPercent{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 9px;
+    background-color: rgb(0, 106, 255);
+    padding: 4px 8px;
+    align-items: center;
+    position: relative;
+    border-radius: 3px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.OrigPrice {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  padding: 4px 8px;
+  align-items: center;
+  position: relative;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+.DiscountedPrice {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  padding: 4px 8px;
+  align-items: center;
+  position: relative;
+  border-radius: 3px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/*....................................................................div payb.........................................*/
+
+ .payb{
+  
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(to right top, #1f1f1f 0%, #1f1f1f 100%);
+  z-index: 2;
+  margin: 0;
+  padding-bottom: 100px;
+ }
+
+.bbgt{
+  color: #ffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+
+h3{
+  text-align: center;
+  color: #eee;
+  font-size: 30;
+}
+
+ /*...........................................................div six..........................................................*/
+
+ .six{
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(to right top, #1f1f1f 0%, #1f1f1f 100%);
+
+ }
+
+ /*...........................................................div seven..........................................................*/
+
+ .seven{
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(to right top, #1f1f1f 0%, #1f1f1f 100%);
+
+ }
+
+ /*...........................................................div eight..........................................................*/
+
+ .eight{
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(to right top, #1f1f1f 0%, #1f1f1f 100%);
+
+ }
+
+ /*...........................................................div nine..........................................................*/
+
+ .nine{
+  height: 130px;
+  width: 100%;
+  background-color: rgb(77, 77, 77);
+  margin: 0;
+ }
+
+ .flogo{
+  margin: 20;
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  right: 0;
+  background-image: url(GameOnLogo.png);
+  background-size: cover;
+  
+ }
+
+ .flabel{
+  position: absolute;
+  height: 100px;
+  width: 1300px;
+  background-color: rgb(77, 77, 77);
+  padding: 25 0 0 25;
+ }
+
+ .f{
+  font-size: 12;
+  color: #1f1f1f;
+ }
+
+/*.............................................................. button featured games ......................*/
+
+ .GameName-container{
+  margin-top:10px;
+  left: 2em;
+  background-color: transparent;
+  color: aliceblue;
+  content: "";
+  position: absolute;
+  border-width: 1px;
+  border-style: outset;
+  border-color: white;
+ }
+
+ .GameName-button{
+  display: flex;
+  width: 7em;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+ }
+ 
+/*..........................................................swipe.................*/
+
+.swiper {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 700px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
